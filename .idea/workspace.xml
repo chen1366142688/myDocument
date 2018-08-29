@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test-Principle.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test-Principle.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="44" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="476">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test-Principle.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test-Principle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Test-Principle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="304">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -138,10 +138,10 @@
         <option value="$PROJECT_DIR$/js/Health.js" />
         <option value="$PROJECT_DIR$/page/StartOfTraining.html" />
         <option value="$PROJECT_DIR$/page/Program-Particulars.html" />
-        <option value="$PROJECT_DIR$/page/Test-Principle.html" />
         <option value="$PROJECT_DIR$/css/Test-Principle.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/Test-Principle.js" />
+        <option value="$PROJECT_DIR$/page/Test-Principle.html" />
       </list>
     </option>
   </component>
@@ -269,12 +269,12 @@
       <workItem from="1535420830462" duration="17000" />
       <workItem from="1535436381621" duration="1011000" />
       <workItem from="1535506973114" duration="2912000" />
-      <workItem from="1535510734675" duration="815000" />
+      <workItem from="1535510734675" duration="1030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210077000" />
+    <option name="totallyTimeSpent" value="210292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -631,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/Test-Principle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -654,8 +647,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Test-Principle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="304">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
