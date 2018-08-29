@@ -23,7 +23,7 @@
     </div>
 </div>
 <div class='unwind-section'>
-    <div class='unwind-section-headline'>测试步骤：测试的内容</div>
+    <div class='unwind-section-headline'>测试步骤：</div>
     <div class='measuring-procedure'>
         <div class='measuring-procedure-text'></div>
         <div class='measuring-procedure-video'>
@@ -39,8 +39,27 @@
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src="../js/url-helper.js" type="text/javascript"></script>
 <script>
-   var testId = GetQueryString('testId');
-    alert(testId);
+    var testId = GetQueryString('testId');
+    $('.Play').click(function () {
+        $(this).hide();
+        $(this).next().show();
+        play();
+    });
+    $('.pause').click(function () {
+        $(this).hide();
+        $(this).prev().show();
+        Pause();
+    });
+    var myVideo = $("#video1");
+    //控制视频播放
+    function play() {
+        myVideo.play();
+    }
+    //控制视频暂停
+    function Pause() {
+        myVideo.pause();
+    }
+
     helpnotice(42);
     function helpnotice(testId) {
         $.ajax({
