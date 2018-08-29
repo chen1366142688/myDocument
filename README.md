@@ -1,0 +1,2 @@
+# myDocument
+测试测试原理项目在iPhone系统9或者以下的没触发js
