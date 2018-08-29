@@ -2,6 +2,7 @@
 var testId;
 $(function () {
     testId = GetQueryString('testId');
+    alert(testId)
     helpnotice(this, testId);
 
 });
