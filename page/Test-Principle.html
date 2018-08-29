@@ -36,10 +36,49 @@
         </div>
     </div>
 </div>
-<script>
-    alert(122122)
-</script>
 <script src="../js/jquery.min.js" type="text/javascript"></script>
+<script>
+    alert("进入到js");
+    helpnotice(42);
+    function helpnotice(testId) {
+        alert("进入到方法")
+        $.ajax({
+            type: 'GET',
+            url: appurl + "/v1/corporeityTest/getCorporeityTheoryDetail",
+            data: {
+                'testId': testId
+            },
+            dataType: "json",
+            contentType: "application/json",
+            async: false,
+            success: function (res) {
+                if (res.code == '10000') {
+                    alert("请求成功")
+                    var result = res.response;
+                    $('#TestPrincipleHeader').html(res.response.theoryIntroduction);
+                    $.each(res, function (key, item) {
+                        $('#TestPrincipleSection').append(item.theoryDetail);
+                    });
+                    if (result == null || result.length == 0)
+                        return;
+                    for (var j = 0, html = ''; j < result.stepVOS.length; j++) {
+                        html += '<div class="measuring-procedure-text-one">' + result.stepVOS[j].stepDetail + '</div>'
+                    }
+                    j = null;
+                    $('.measuring-procedure-text').html(html);
+                    $('#video1').attr('src', result.teachingVideo);
+                    $('#video1').attr('poster', result.teachingVideoPhoto);
+                }else{
+                    alert("请求失败")
+                }
+            },
+            error: function (data) {
+                console.log("请求失败，服务器错误")
+            }
+        })
+
+    }
+</script>
 <script src="../js/url-helper.js" type="text/javascript"></script>
 <script src="../js/Test-Principle.js"></script>
 
