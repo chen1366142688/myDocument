@@ -2,44 +2,41 @@ body{
 	background-color: #ececec;
 	height: -webkit-fill-available;
 }
-
 .Test-Principle{
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
 	margin: 0;
-	padding: 0 24px;
+	padding: 37px 24px 0 24px;
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
+.Test-Principle-header{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.testTit{
+	font-size: 28px;
+	color:#171717;
+	font-weight: bold;
+}
+.Test-Principle-header-section{
+	line-height:42px;
+	font-size: 25px;
+	color: #666666;
+	text-align: left;
+}
+
 .Test-Principle img{
 	max-width: 100%;
 	height: 100%;
 }
 
-.Test-Principle-header{
-	width: 100%;
-	height: 100%;
-	vertical-align: middle;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
 
-.Test-Principle-header-section{
-	width: 100%;
-    height: 100%;
-    line-height: 36px;
-    vertical-align: middle;
-    font-size: 24px;
-    color: #666666;
-    text-align: left;
-    padding: 40px 0;
-	box-sizing: border-box;
-}
+
+
 
 
 .Test-Principle-section{
@@ -59,11 +56,9 @@ body{
 
 .Test-Principle-section-text{
 	width: 100%;
-	height: 100%;
 	line-height: 36px;
-	vertical-align: middle;
 	font-size: 24px;
-	color: #666666;
+	color: #171717;
 	text-align: left;
 	margin: 40px 0;
 }
