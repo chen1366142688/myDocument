@@ -39,60 +39,69 @@
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src="../js/url-helper.js" type="text/javascript"></script>
 <script>
-    var testId = GetQueryString('testId');
-    $('.Play').click(function () {
-        $(this).hide();
-        $(this).next().show();
-        play();
-    });
-    $('.pause').click(function () {
-        $(this).hide();
-        $(this).prev().show();
-        Pause();
-    });
-    var myVideo = document.getElementById("video1");
-    function play() {
-        myVideo.play();
-    }
-    function Pause() {
-        myVideo.pause();
-    }
+        var testId = GetQueryString('testId');
+        $('.Play').click(function () {
+            $(this).hide().next().show();
+            play();
+        });
+        $('.pause').click(function () {
+            Pause();
+        });
+        var myVideo = document.getElementById("video1");
+        function play() {
+            myVideo.play();
+            getvideoprogress();
+        }
+        function Pause() {
+            myVideo.pause();
+        }
 
-    helpnotice(42);
-    function helpnotice(testId) {
-        $.ajax({
-            type: 'GET',
-            url: appurl + "/v1/corporeityTest/getCorporeityTheoryDetail",
-            data: {
-                'testId': testId
-            },
-            dataType: "json",
-            contentType: "application/json",
-            async: false,
-            success: function (res) {
-                if (res.code == '10000') {
-                    var result = res.response;
-                    $('#TestPrincipleHeader').html(res.response.theoryIntroduction);
-                    $.each(res, function (key, item) {
-                        $('#TestPrincipleSection').append(item.theoryDetail);
-                    });
-                    if (result == null || result.length == 0)
-                        return;
-                    for (var j = 0, html = ''; j < result.stepVOS.length; j++) {
-                        html += '<div class="measuring-procedure-text-one">' + result.stepVOS[j].stepDetail + '</div>'
+        helpnotice(testId);
+        function helpnotice(testId) {
+            $.ajax({
+                type: 'GET',
+                url: appurl + "/v1/corporeityTest/getCorporeityTheoryDetail",
+                data: {
+                    'testId': testId
+                },
+                dataType: "json",
+                contentType: "application/json",
+                async: false,
+                success: function (res) {
+                    if (res.code == '10000') {
+                        var result = res.response;
+                        $('#TestPrincipleHeader').html(res.response.theoryIntroduction);
+                        $.each(res, function (key, item) {
+                            $('#TestPrincipleSection').append(item.theoryDetail);
+                        });
+                        if (result == null || result.length == 0)
+                            return;
+                        for (var j = 0, html = ''; j < result.stepVOS.length; j++) {
+                            html += '<div class="measuring-procedure-text-one">' + result.stepVOS[j].stepDetail + '</div>'
+                        }
+                        j = null;
+                        $('.measuring-procedure-text').html(html);
+                        $('#video1').attr('src', result.teachingVideo);
+                        $('#video1').attr('poster', result.teachingVideoPhoto);
                     }
-                    j = null;
-                    $('.measuring-procedure-text').html(html);
-                    $('#video1').attr('src', result.teachingVideo);
-                    $('#video1').attr('poster', result.teachingVideoPhoto);
+                },
+                error: function (data) {
+                    console.log("请求失败，服务器错误")
                 }
-            },
-            error: function (data) {
-                console.log("请求失败，服务器错误")
-            }
-        })
+            })
 
-    }
+        }
+        function getvideoprogress() {
+            var currentTime=myVideo.currentTime.toFixed(2);
+            setTimeout(function () {
+                if(currentTime == myVideo.duration.toFixed(2) || myVideo.paused == true){
+                    $('.pause').hide();
+                    $('.Play').show();
+                    return false;
+                }
+                getvideoprogress();
+            }, 100);
+        }
 </script>
 
 <!--<script src="../js/Test-Principle.js"></script>-->
