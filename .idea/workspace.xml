@@ -19,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test-Principle.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test-Principle.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test-Principle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test-Principle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/Test-Principle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            <state relative-caret-position="171">
+              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -49,8 +49,8 @@
       <file leaf-file-name="Test-Principle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Test-Principle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="285">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -68,7 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>token</find>
       <find>HelpListText</find>
       <find>HelpListheadline</find>
       <find>.HelpList-section</find>
@@ -98,6 +97,7 @@
       <find>Test-Principle</find>
       <find>unwind-section</find>
       <find>measuring-procedure-text</find>
+      <find>.Test-Principle-header-section</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/page/Program-Particulars.html" />
         <option value="$PROJECT_DIR$/js/Test-Principle.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/page/Test-Principle.html" />
         <option value="$PROJECT_DIR$/css/Test-Principle.css" />
+        <option value="$PROJECT_DIR$/page/Test-Principle.html" />
       </list>
     </option>
   </component>
@@ -269,12 +269,12 @@
       <workItem from="1535420830462" duration="17000" />
       <workItem from="1535436381621" duration="1011000" />
       <workItem from="1535506973114" duration="2912000" />
-      <workItem from="1535510734675" duration="3188000" />
+      <workItem from="1535510734675" duration="3391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212450000" />
+    <option name="totallyTimeSpent" value="212653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -287,7 +287,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49894625" weight="0.3242655" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49894625" visible="true" weight="0.3242655" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -631,20 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Test-Principle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -654,8 +640,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/Test-Principle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="171">
+          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Test-Principle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Test-Principle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
