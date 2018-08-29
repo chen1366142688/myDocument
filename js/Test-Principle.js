@@ -1,4 +1,5 @@
 alert("进入到这个js")
+confirm("进入js")
 var testId;
 $(function () {
     testId = GetQueryString('testId');
