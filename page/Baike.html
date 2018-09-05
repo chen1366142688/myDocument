@@ -62,7 +62,7 @@
                     $(`[data-code=${codes}] .Switch-one-text`).addClass('active');
                     $(".Baike-header").scrollLeft($(`[data-code=${codes}] .Switch-one-text`)[0].offsetLeft);
                     alert("准备调用")
-                    //itemGradeInfoByItemIdb(arr,codes);
+                    itemGradeInfoByItemIdb(arr,codes);
                 }
             },
             error: function (data) {
@@ -71,7 +71,9 @@
             }
         })
     }
-
+    itemGradeInfoByItemIdb(arr,codes){
+        alert("进来了")
+    }
     //请求接口 接口名字是，通过科目id查询科目的评级说明
     // function itemGradeInfoByItemIdb(arr,codes) {
     //     alert("调用成功进入2请求")
