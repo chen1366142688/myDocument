@@ -28,7 +28,7 @@
     alert(121212121212)
     var codes = GetQueryString("code");
     alert(codes)
-     getallItemInfo(codes);
+    getallItemInfo(codes);
     // $(".Switch-one-text").live('click',function (ev) {
     //     $(this).addClass("active").parent().siblings().children(".Switch-one-text").removeClass('active');
     //     var code = $(this).parent().attr('data-code');
@@ -36,14 +36,17 @@
     //     itemGradeInfoByItemIdb(arrobj,1); //默认显示第一个
     // });
     function getallItemInfo(codes) {
+        alert("进入发送请求")
         $.ajax({
             type: 'post',
             url: appurl + "/v1/help/get/commonInformationNames",
             data: {},
             dataType: "json",
             success: function (res) {
+                alert("成功")
+                alert(res.response)
                 if (res.code == '10000') {
-                    alert("成功")
+                    alert("成功111111")
                     var arr = [];
                     var dataHtmls = '';
                     var data_responses = res.response;
