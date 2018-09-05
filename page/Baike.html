@@ -61,7 +61,7 @@
                     $(".Switch").html(dataHtmls);
                     $(`[data-code=${codes}] .Switch-one-text`).addClass('active');
                     $(".Baike-header").scrollLeft($(`[data-code=${codes}] .Switch-one-text`)[0].offsetLeft);
-                    itemGradeInfoByItemIdb(arr,codes);
+                    //itemGradeInfoByItemIdb(arr,codes);
                 }
             },
             error: function (data) {
@@ -75,35 +75,35 @@
     }
 
     //请求接口 接口名字是，通过科目id查询科目的评级说明
-    function itemGradeInfoByItemIdb(arr,codes) {
-        alert("进入2请求")
-        $.ajax({
-            type: 'POST',
-            url: appurl +"/v1/help/get/commonInformation",
-            data: JSON.stringify({
-                codes:arr
-            }),
-            contentType: "application/json",
-            success: function (res) {
-                alert("成功2")
-                if (res.code == '10000') {
-                    for(let i = 0; i<res.response.length;i++){
-                        if(codes ==1){
-                            $('.Baike-section').html(res.response[0].comtent)
-                        }else{
-                            if(res.response[i].code == codes){
-                                $('.Baike-section').html(res.response[i].comtent)
-                            }
-                        }
-                    }
-                }
-            },
-            error: function (data) {
-                alert("失败2222222222222222222")
-                console.log("请求失败，服务器错误")
-            }
-        })
-    }
+    // function itemGradeInfoByItemIdb(arr,codes) {
+    //     alert("进入2请求")
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: appurl +"/v1/help/get/commonInformation",
+    //         data: JSON.stringify({
+    //             codes:arr
+    //         }),
+    //         contentType: "application/json",
+    //         success: function (res) {
+    //             alert("成功2")
+    //             if (res.code == '10000') {
+    //                 for(let i = 0; i<res.response.length;i++){
+    //                     if(codes ==1){
+    //                         $('.Baike-section').html(res.response[0].comtent)
+    //                     }else{
+    //                         if(res.response[i].code == codes){
+    //                             $('.Baike-section').html(res.response[i].comtent)
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         },
+    //         error: function (data) {
+    //             alert("失败2222222222222222222")
+    //             console.log("请求失败，服务器错误")
+    //         }
+    //     })
+    // }
 </script>
 </body>
 </html>
