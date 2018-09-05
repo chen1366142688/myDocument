@@ -28,13 +28,13 @@
     alert(121212121212)
     var codes = GetQueryString("code");
     alert(codes)
-    getallItemInfo(codes);
-    $(".Switch-one-text").live('click',function (ev) {
-        $(this).addClass("active").parent().siblings().children(".Switch-one-text").removeClass('active');
-        var code = $(this).parent().attr('data-code');
-        var arrobj = [code];
-        itemGradeInfoByItemIdb(arrobj,1); //默认显示第一个
-    });
+    // getallItemInfo(codes);
+    // $(".Switch-one-text").live('click',function (ev) {
+    //     $(this).addClass("active").parent().siblings().children(".Switch-one-text").removeClass('active');
+    //     var code = $(this).parent().attr('data-code');
+    //     var arrobj = [code];
+    //     itemGradeInfoByItemIdb(arrobj,1); //默认显示第一个
+    // });
     function getallItemInfo(codes) {
         $.ajax({
             type: 'post',
