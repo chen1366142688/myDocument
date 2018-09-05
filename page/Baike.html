@@ -66,6 +66,9 @@
             error: function (data) {
                 alert("失败")
                 console.log("请求失败，服务器错误")
+            },
+            complete:function(){
+                alert("成功失败都走")
             }
         })
     }
