@@ -69,6 +69,7 @@
             url: appurl + "/v1/help/get/commonInformation",
             data: JSON.stringify({codes:arr}),
             dataType: "json",
+            contentType: "application/json",
             success(res){
                 alert("成功")
                 if (res.code == '10000') {
