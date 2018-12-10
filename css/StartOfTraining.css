@@ -53,10 +53,10 @@
     width: 50%;
     height: 60px;
     line-height: 60px;
-    background: -webkit-linear-gradient(left, rgba(77,208,200,0.3), rgba(77,208,200,1)); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, rgba(77,208,200,0.3), rgba(77,208,200,1)); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, rgba(77,208,200,0.3), rgba(77,208,200,1)); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, rgba(77,208,200,0.3), rgba(77,208,200,1)); /* 标准的语法（必须放在最后） */
+    background: -webkit-linear-gradient(left, rgba(77, 208, 200, 0.3), rgba(77, 208, 200, 1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(77, 208, 200, 0.3), rgba(77, 208, 200, 1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(77, 208, 200, 0.3), rgba(77, 208, 200, 1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(77, 208, 200, 0.3), rgba(77, 208, 200, 1)); /* 标准的语法（必须放在最后） */
 }
 
 .Training-control-volume-increase {
@@ -66,7 +66,7 @@
     vertical-align: middle;
 }
 
-.Training-Pause{
+.Training-Pause {
     width: 100%;
     height: 544px;
     line-height: 544px;
@@ -76,7 +76,7 @@
     justify-content: center;
 }
 
-.Training-Pause-background{
+.Training-Pause-background {
     width: 320px;
     height: 320px;
     vertical-align: middle;
@@ -84,11 +84,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgba(77,208,200,0.3);
+    background-color: rgba(77, 208, 200, 0.3);
 }
-.pauseBox{display: none;}
 
-.Training-Pause-beijing{
+.pauseBox {
+    display: none;
+}
+
+.Training-Pause-beijing {
     width: 280px;
     height: 280px;
     vertical-align: middle;
@@ -96,24 +99,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgba(77,208,200,1);
+    background-color: rgba(77, 208, 200, 1);
 }
 
-.Abeyancd{
+.Abeyancd {
     width: 80px;
     height: 80px;
     line-height: 80px;
     vertical-align: middle;
 }
 
-.Play{
+.Play {
     width: 80px;
     height: 80px;
     line-height: 80px;
     vertical-align: middle;
 }
 
-.Training-button{
+.Training-button {
     width: 100%;
     height: 80px;
     line-height: 80px;
@@ -121,11 +124,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  0 24px;
+    padding: 0 24px;
     box-sizing: border-box;
 }
 
-.Training-button-left{
+.Training-button-left {
     width: 240px;
     height: 78px;
     line-height: 78px;
@@ -138,7 +141,7 @@
     font-size: 30px;
 }
 
-.Training-button-right{
+.Training-button-right {
     width: 410px;
     height: 78px;
     line-height: 78px;
@@ -151,25 +154,33 @@
     font-size: 30px;
 }
 
-.kong{
+.kong {
     width: 100%;
     height: 60px;
     background-color: #fff;
 }
-#video1{
-    width:100%;
+
+#video1 {
+    width: 100%;
     height: 750px;
-    margin-bottom:21px;
+    /*height: 422px;*/
+    margin-bottom: 21px;
 }
-.btnGroup{
+
+.btnGroup {
     position: absolute;
     top:315px;
-    left:315px;
-    width:120px;
-    height:120px;
+    /*top: 151px;*/
+    left: 315px;
+    width: 120px;
+    height: 120px;
 }
-.btnImg,.puse{
-    width:120px;
-    height:120px;
+
+.btnImg, .puse {
+    width: 120px;
+    height: 120px;
 }
-.puse{display: none}
+
+.puse {
+    display: none
+}

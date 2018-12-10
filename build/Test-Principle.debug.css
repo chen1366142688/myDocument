@@ -23,27 +23,38 @@ body {
   font-size: 0.373333rem;
   color: #171717;
   font-weight: bold;
+  line-height: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .Test-Principle-header-section {
-  line-height: 0.56rem;
-  font-size: 0.333333rem;
+  line-height: 0.66rem;
+  font-size: 0.373333rem;
   color: #666666;
   text-align: left;
+  vertical-align: middle;
 }
 
 .Test-Principle img {
   max-width: 100%;
-  height: 100%;
 }
 
 .Test-Principle-section {
   width: 100%;
   height: 100%;
+  line-height: 0.66rem;
+  font-size: 0.373333rem;
   vertical-align: middle;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.Test-Principle-section p {
+  line-height: 0.66rem;
+  font-size: 0.373333rem;
+  color: #666666;
+  vertical-align: middle;
 }
 
 .Test-Principle-section-img {
@@ -75,16 +86,16 @@ body {
 
 .measuring-procedure-text img {
   max-width: 100%;
-  height: 100%;
 }
 
 .unwind-section-headline {
   width: 100%;
   height: 0.373333rem;
-  line-height: 0.373333rem;
+  line-height: 0.4rem;
   font-size: 0.373333rem;
   color: #333;
   font-weight: bold;
+  margin-bottom: 0.4rem;
 }
 
 .measuring-procedure {
@@ -101,20 +112,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #666666;
 }
 
 .measuring-procedure-text-one {
   width: 100%;
-  line-height: 0.48rem;
-  font-size: 0.32rem;
-  color: #333;
+  line-height: 0.56rem;
+  font-size: 0.373333rem;
+  color: #666666;
   vertical-align: middle;
   margin: 0.2rem 0;
 }
 
 .measuring-procedure-video {
   width: 100%;
-  height: 9.36rem;
+  /*height: 702px;*/
+  height: 5.266667rem;
   vertical-align: middle;
   position: relative;
   margin-top: 0.266667rem;
@@ -133,8 +146,10 @@ body {
   line-height: 0.8rem;
   vertical-align: middle;
   position: absolute;
-  left: 0.413333rem;
-  bottom: 0.413333rem;
+  /*left: 31px;
+	bottom: 31px;*/
+  bottom: 2.24rem;
+  left: 4.28rem;
 }
 
 .pause {
@@ -143,8 +158,10 @@ body {
   line-height: 0.8rem;
   vertical-align: middle;
   position: absolute;
-  left: 0.413333rem;
-  bottom: 0.413333rem;
+  /*left: 31px;
+	bottom: 31px;*/
+  bottom: 2.24rem;
+  left: 4.28rem;
   display: none;
 }
 

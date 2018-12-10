@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">-->
+    <meta name="format-detection" content="telephone=no, email=no">
+    <script src="../build/flexible_css.debug.js"></script>
+    <script src="../build/flexible.debug.js"></script>
+    <link href="../build/base.debug.css" rel="stylesheet"/>
+    <link href="../build/index.debug.css" rel="stylesheet"/>
+    <title>常见问题</title>
+</head>
+<body>
+<ul id="app">
+</ul>
+<script src="../js/url-helper.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            type: "GET",
+            url: uniRunUrl+"/v1/help/get/helpList",
+            dataType: "json",
+            contentType: 'application/json',
+            data: {},
+            success(data) {
+                if(data.code == 10000){
+                    var result = data.response;
+                    var html = '';
+                    for(var i=0;i<result.length;i++){
+                        html +='<li data-code="'+result[i].detailId+'" data-name="'+result[i].detailTitle+result[i].detailSort+'"><p class="left"><img src="../images/endway.png" alt=""><span>'+result[i].detailTitle+'</span></p><img class="right" src="../images/right.png" alt="next"></li>'
+                    }
+                    $('#app').html(html);
+                    html = null;
+                    $('li').click(function(){
+                        var code = $(this).attr('data-code');
+                        var name = encodeURI(encodeURI($(this).attr('data-name')));
+                        if(code){
+                            window.location.href = "./info.html?code="+code+'&name='+name;
+                        }else{
+                            window.location.reload();
+                        }
+                    })
+                }else{
+                    confirm(data.msg)
+                }
+            },
+            error(){
+                confirm("网络异常，请稍后再试!")
+            }
+        })
+        // $("#app").on("click","li",function(event){
+        //         var target = $(event.target);
+        //         var code = event.target.dataset.code;
+        //         var name = encodeURI(encodeURI(event.target.dataset.name));
+        //         window.location.href = "./info.html?code="+code+'&name='+name;
+        //  })
+
+    });
+
+</script>
+</body>
+</html>

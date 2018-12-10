@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">-->
+    <meta name="format-detection" content="telephone=no, email=no">
+    <script src="../build/flexible_css.debug.js"></script>
+    <script src="../build/flexible.debug.js"></script>
+    <!--<link href="build/base.debug.css" rel="stylesheet"/>-->
+    <link href="../build/info.debug.css" rel="stylesheet"/>
+    <title>问题1</title>
+</head>
+    <div id="app">
+
+    </div>
+<body>
+<script src="../js/url-helper.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function(){
+        var code = GetQueryString('code');
+        var name = GetQueryString('name');
+        $("title").html(decodeURI(name));
+        console.log(code,name);
+        $.ajax({
+            type: "GET",
+            url: uniRunUrl+"/v1/help/get/helpDetailInfoByHelpDetailId",
+            dataType: "json",
+            contentType: 'application/json',
+            data: {helpDetailId:code},
+            success(data) {
+                if(data.code == 10000){
+                    $('#app').html(data.response.content);
+                }else{
+                    confirm(data.msg)
+                }
+            },
+            error(){
+                confirm('网络异常，请稍后再试!')
+            }
+        })
+    });
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+</script>
+</body>
+</html>

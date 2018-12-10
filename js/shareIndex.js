@@ -27,6 +27,8 @@ $(function(){
                     let array = new Array();
                     let array1 = new Array();
                     let array2 = new Array();
+                    $('.sore').text(result.score);
+                    $('.Proportion').text(result.percent+'%');
                     for (let i = 0; i < result.peopleNumList.length; i++) {
                         if (i == result.score) {
                             array1.push(result.peopleNumList[i]);
@@ -84,7 +86,7 @@ $(function(){
                     indicator: [],
                     center: ['50%', '50%'],
                     radius: '80%',
-                    startAngle: 60,
+                    startAngle: 10,
                     splitNumber: 10,
                     shape: 'circle',
                     name: {
@@ -131,7 +133,7 @@ $(function(){
                                 color: '#FDC54A',
                                 fontWeight:'bold',
                                 fontSize:13,
-                                position: 'insideTopLeft',
+                                position: 'insideBottom',
                                 distance:5,
                                 rich: {
                                     a: {

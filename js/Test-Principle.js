@@ -1,9 +1,7 @@
-alert("进入到这个js")
-confirm("进入js")
+// var appurl = 'http://192.168.3.4:8081';  //这个删除
 var testId;
 $(function () {
     testId = GetQueryString('testId');
-    alert(testId)
     helpnotice(this, testId);
 
 });

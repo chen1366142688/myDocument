@@ -5,7 +5,7 @@ body{
 
 .Project-Summary{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background-color: #fff;
     line-height: 0;
     margin: 0;
@@ -17,7 +17,7 @@ body{
 
 .Program-Particulars-section {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background-color: #fff;
     padding: 0 24px;
     box-sizing: border-box;
@@ -26,7 +26,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
+.Program-Particulars-sections {
+    width: 100%;
+    /*height: 100%;*/
+    background-color: #fff;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .auxiliary-appliance {
     width: 100%;
     height: 0.88rem;
@@ -47,7 +56,7 @@ body{
 
 .Program-description {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     vertical-align: middle;
     display: flex;
     flex-direction: column;
@@ -67,11 +76,12 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-top:30px;
 }
 
 .Program-description-text {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-bottom: 0.32rem;
     font-size:24px;
     font-family:PingFang-SC-Regular;
@@ -92,7 +102,7 @@ body{
 
 .Taboo-crowd {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     vertical-align: middle;
     display: flex;
     flex-direction: column;
@@ -101,7 +111,7 @@ body{
 
 .patent {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background-color: #f4f4f4;
     border-radius: 0.12rem;
     padding: 0 0.21rem;
@@ -126,7 +136,7 @@ body{
 
 .patent-text {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +154,7 @@ body{
 
 .patent-text-section {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     line-height: 0.38rem;
     font-size: 0.26rem;
     margin-top: 0.19rem;

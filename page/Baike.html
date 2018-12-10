@@ -71,16 +71,16 @@
             contentType: "application/json",
             success(res){
                 if (res.code == '10000') {
-                   for(var i = 0; i<res.response.length;i++){
-                       if(codes ==1){
-                          $('.Baike-section').html(res.response[0].comtent)
-                       }else{
-                          if(res.response[i].code == codes){
-                              $('.Baike-section').html(res.response[i].comtent)
-                                        }
-                                    }
-                                }
+                    for(var i = 0; i<res.response.length;i++){
+                        if(codes ==1){
+                            $('.Baike-section').html(res.response[0].comtent)
+                        }else{
+                            if(res.response[i].code == codes){
+                                $('.Baike-section').html(res.response[i].comtent)
                             }
+                        }
+                    }
+                }
             },
             error(res){
                 alert("失败")

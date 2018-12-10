@@ -1,19 +1,18 @@
 $(function () {
-    let code = GetQueryString("code");
-    getallItemInfo();
+     var codes = GetQueryString("code");
+    getallItemInfo(codes);
     $(".Switch-one-text").live('click',function (ev) {
         $(this).addClass("active").parent().siblings().children(".Switch-one-text").removeClass('active');
         var code = $(this).parent().attr('data-code');
         var arrobj = [code];
-        itemGradeInfoByItemIdb(arrobj); //默认显示第一个
+        itemGradeInfoByItemIdb(arrobj,1); //默认显示第一个
     })
 
 });
-
 /*
 获取所有有效的科目简要信息
 */
-function getallItemInfo() {
+function getallItemInfo(codes) {
     $.ajax({
         type: 'post',
         url: appurl + "/v1/help/get/commonInformationNames",
@@ -32,10 +31,11 @@ function getallItemInfo() {
                     dataHtmls +="<div class='Switch-one' data-code='"+data_responses[i].code+"' data-name='"+data_responses[i].name+"'><p class='Switch-one-text'>"+data_responses[i].name+"</p></div>";
                 }
                 $(".Switch").html(dataHtmls);
-                $('.Switch .Switch-one-text').eq(0).addClass('active');
-                itemGradeInfoByItemIdb(arr);
+                $(`[data-code=${codes}] .Switch-one-text`).addClass('active');
+                console.log($(`[data-code=${codes}] .Switch-one-text`)[0].offsetLeft)
+                $(".Baike-header").scrollLeft($(`[data-code=${codes}] .Switch-one-text`)[0].offsetLeft);
+                itemGradeInfoByItemIdb(arr,codes);
             }
-
         },
         error: function (data) {
             console.log("请求失败，服务器错误")
@@ -44,7 +44,7 @@ function getallItemInfo() {
 }
 
 //请求接口 接口名字是，通过科目id查询科目的评级说明
-function itemGradeInfoByItemIdb(arr) {
+function itemGradeInfoByItemIdb(arr,codes) {
     $.ajax({
         type: 'POST',
         url: appurl +"/v1/help/get/commonInformation",
@@ -55,7 +55,13 @@ function itemGradeInfoByItemIdb(arr) {
         success: function (res) {
             if (res.code == '10000') {
                 for(let i = 0; i<res.response.length;i++){
-                    $('.Baike-section').html(res.response[0].comtent)
+                    if(codes ==1){
+                        $('.Baike-section').html(res.response[0].comtent)
+                    }else{
+                        if(res.response[i].code == codes){
+                            $('.Baike-section').html(res.response[i].comtent)
+                        }
+                    }
                 }
             }
         },

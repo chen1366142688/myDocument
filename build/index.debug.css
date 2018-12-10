@@ -1,0 +1,44 @@
+#app {
+  background-color: white;
+  width: 100%;
+  padding: 0 0.666667rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#app li {
+  width: 100%;
+  height: 1.333333rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#app li p.left {
+  height: 1.333333rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+#app li p.left img {
+  width: 0.053333rem;
+  height: 0.266667rem;
+  vertical-align: middle;
+}
+
+#app li p.left span {
+  font-size: 0.373333rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 600;
+  color: rgba(51,51,51,1);
+  margin-left: 0.32rem;
+}
+
+#app>li>img.right {
+  width: 0.4rem;
+  height: 0.4rem;
+}

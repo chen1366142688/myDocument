@@ -2,9 +2,6 @@ $(function(){
     let planId = GetQueryString("planId");
     let token = GetQueryString("token");
     let programType = GetQueryString("type");
-
-     // let token = "1d4236d016d83f5b59a58822ccb98950";
-     // let planId =1;
     planDetail(planId,token);
     if(programType == 1){//说明这是小程序显示按钮
         $('.Training-button').show();

@@ -1,0 +1,137 @@
+.app {
+    padding:5px 16px;
+    box-sizing: border-box;
+}
+.teContent{
+    width:690px;
+    min-height: 100px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    box-shadow: #DEDEDE 0px 16px 16px;
+    padding-bottom:40px;
+    margin:0 auto 54px auto;
+}
+.top{
+    width:690px;
+    height:83px;
+    background: url("http://xlrtimo.oss-cn-beijing.aliyuncs.com/HorseScoutData/teacher/bg5.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-size:34px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    padding-left:19px;
+    box-sizing: border-box;
+}
+.section{
+    width:630px;
+    padding:0 30px 37px 30px;
+    font-size:26px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    text-indent: 52px;
+}
+.footEval{
+    width:100%;
+    height:36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.imgBoxAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:36px;
+}
+.footEval p span{
+    height:28px;
+    font-size:26px;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.imgBoxAll img{
+    width:30px;
+    height:28px;
+    margin-left:20px;
+}
+.footer{
+    width:600px;
+    height:100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #8DE2EB 0px 10px 10px;
+    font-size:34px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    background-color: #10C7E1;
+    color:rgba(255,255,255,1);
+    margin:0 auto 40px auto;
+}
+/*弹窗*/
+.modalBox{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.46);
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width:690px;
+    height:399px;
+    box-sizing: border-box;
+    background: url("http://xlrtimo.oss-cn-beijing.aliyuncs.com/HorseScoutData/teacher/modalBg.png")  no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.modal p{
+    width:528px;
+    height:40px;
+    font-size:28px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    margin:0 auto;
+}
+.modal .modalOnes{
+    margin:135px auto 20px auto;
+}
+.btn{
+    width:255px;
+    height:75px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    font-size:30px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    background: url("http://xlrtimo.oss-cn-beijing.aliyuncs.com/HorseScoutData/teacher/bg4.png") no-repeat;
+    background-size: cover;
+    margin:48px auto 0 auto;
+
+}
+.closeModal{
+    position: absolute;
+    top:33px;
+    right:33px;
+    width:31px;
+    height:31px;
+}

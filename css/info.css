@@ -1,0 +1,25 @@
+#app{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding:36px 80px 60px 80px;
+    font-size:24px;
+    font-family:PingFangSCRegular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-indent:48px;
+}
+#app p{
+    width: 100%;
+    line-height: 39px;
+    font-size: 26px;
+    color: rgba(51,51,51,1);
+}
+
+#app p img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
