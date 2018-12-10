@@ -92,13 +92,13 @@
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src="../js/url-helper.js" type="text/javascript"></script>
 <script>
-    var options = GetQueryString('options');
-    options = JSON.parse(options);
-    console.log("options:",options)
+    var discussId = GetQueryString('discussId');
+    var userId = GetQueryString('userId');
+    var userType = GetQueryString('userType');
     var settings = {
-        discussId: options.discussId,
-        userId: options.userId,
-        userType: options.userType
+        discussId: discussId,
+        userId: userId,
+        userType: userType
     };
     $.ajax({
         type:'GET',
